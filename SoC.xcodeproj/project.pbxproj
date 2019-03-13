@@ -18,17 +18,19 @@
 		D86A960922364861007829E7 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A960822364861007829E7 /* HomeCollectionViewCell.swift */; };
 		D86A962E223690CA007829E7 /* PMingLiU.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D86A962D223690CA007829E7 /* PMingLiU.ttf */; };
 		D8735D0A2237824A000A6493 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D092237824A000A6493 /* DetailViewController.swift */; };
-		D8735D0D22378414000A6493 /* SoCTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D0C22378414000A6493 /* SoCTransitionManager.swift */; };
-		D8735D0F223786AE000A6493 /* SoCTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D0E223786AE000A6493 /* SoCTransitionAnimation.swift */; };
-		D8735D1122378910000A6493 /* SoCInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D1022378910000A6493 /* SoCInteractiveTransition.swift */; };
-		D8735D13223799A3000A6493 /* UIViewController+SoCTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D12223799A3000A6493 /* UIViewController+SoCTransition.swift */; };
-		D8735D162237A355000A6493 /* SoCCircleRectSpreadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D152237A355000A6493 /* SoCCircleRectSpreadAnimation.swift */; };
 		D8735D192237ABFE000A6493 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D182237ABFE000A6493 /* CommentViewController.swift */; };
 		D8735D1D2237E3C2000A6493 /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = D8735D1C2237E3C2000A6493 /* Home.json */; };
 		D8735D1F2237E3E1000A6493 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D1E2237E3E1000A6493 /* HomeDataManager.swift */; };
 		D8735D212237E5DB000A6493 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D202237E5DB000A6493 /* HomeModel.swift */; };
 		D8735D232237F5F3000A6493 /* UIColor+HexadecimalColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D222237F5F3000A6493 /* UIColor+HexadecimalColor.swift */; };
 		D8735D2622380100000A6493 /* DetailTopInteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D2522380100000A6493 /* DetailTopInteractiveView.swift */; };
+		D8735D292238BFEC000A6493 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D282238BFEC000A6493 /* MenuViewController.swift */; };
+		D8735D2D2238C98F000A6493 /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D2C2238C98F000A6493 /* FadeAnimation.swift */; };
+		D8735D302238CF0F000A6493 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D2F2238CF0F000A6493 /* UserViewController.swift */; };
+		D8735D332238D3DA000A6493 /* MenuTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D322238D3DA000A6493 /* MenuTopView.swift */; };
+		D8735D352238D423000A6493 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D342238D423000A6493 /* Constant.swift */; };
+		D8735D382238D79D000A6493 /* UserTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D372238D79D000A6493 /* UserTopView.swift */; };
+		D8735D3A2238E6E8000A6493 /* MenuCopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D392238E6E8000A6493 /* MenuCopyrightView.swift */; };
 		E19CC0496ADD2186E11217B8 /* Pods_SoC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B50173E4F43CCDED7E8BF20 /* Pods_SoC.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,17 +51,19 @@
 		D86A960822364861007829E7 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D86A962D223690CA007829E7 /* PMingLiU.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PMingLiU.ttf; sourceTree = "<group>"; };
 		D8735D092237824A000A6493 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		D8735D0C22378414000A6493 /* SoCTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoCTransitionManager.swift; sourceTree = "<group>"; };
-		D8735D0E223786AE000A6493 /* SoCTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoCTransitionAnimation.swift; sourceTree = "<group>"; };
-		D8735D1022378910000A6493 /* SoCInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoCInteractiveTransition.swift; sourceTree = "<group>"; };
-		D8735D12223799A3000A6493 /* UIViewController+SoCTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SoCTransition.swift"; sourceTree = "<group>"; };
-		D8735D152237A355000A6493 /* SoCCircleRectSpreadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoCCircleRectSpreadAnimation.swift; sourceTree = "<group>"; };
 		D8735D182237ABFE000A6493 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		D8735D1C2237E3C2000A6493 /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 		D8735D1E2237E3E1000A6493 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
 		D8735D202237E5DB000A6493 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		D8735D222237F5F3000A6493 /* UIColor+HexadecimalColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexadecimalColor.swift"; sourceTree = "<group>"; };
 		D8735D2522380100000A6493 /* DetailTopInteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopInteractiveView.swift; sourceTree = "<group>"; };
+		D8735D282238BFEC000A6493 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D8735D2C2238C98F000A6493 /* FadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
+		D8735D2F2238CF0F000A6493 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		D8735D322238D3DA000A6493 /* MenuTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTopView.swift; sourceTree = "<group>"; };
+		D8735D342238D423000A6493 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D8735D372238D79D000A6493 /* UserTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTopView.swift; sourceTree = "<group>"; };
+		D8735D392238E6E8000A6493 /* MenuCopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCopyrightView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				D86A95EB22363ADC007829E7 /* AppDelegate.swift */,
 				D86A96012236412C007829E7 /* Base */,
 				D86A95FD223640A4007829E7 /* Home */,
+				D8735D272238BFD6000A6493 /* Menu */,
+				D8735D2E2238CEFB000A6493 /* User */,
 				D8735D0822378227000A6493 /* Detail */,
 				D8735D172237ABED000A6493 /* Comment */,
 				D86A96042236442A007829E7 /* Utils */,
@@ -150,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				D86A96022236414F007829E7 /* RootNavigationController.swift */,
+				D8735D342238D423000A6493 /* Constant.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -157,10 +164,10 @@
 		D86A96042236442A007829E7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D8735D0B223783F3000A6493 /* TransitionManager */,
 				D86A96052236444D007829E7 /* NavigationSettingUtils.swift */,
 				D84B1DA72236A66100B8E166 /* TextUtils.swift */,
 				D8735D222237F5F3000A6493 /* UIColor+HexadecimalColor.swift */,
+				D8735D2C2238C98F000A6493 /* FadeAnimation.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -188,26 +195,6 @@
 				D8735D092237824A000A6493 /* DetailViewController.swift */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		D8735D0B223783F3000A6493 /* TransitionManager */ = {
-			isa = PBXGroup;
-			children = (
-				D8735D142237A2C1000A6493 /* SOCAnimation */,
-				D8735D0C22378414000A6493 /* SoCTransitionManager.swift */,
-				D8735D0E223786AE000A6493 /* SoCTransitionAnimation.swift */,
-				D8735D1022378910000A6493 /* SoCInteractiveTransition.swift */,
-				D8735D12223799A3000A6493 /* UIViewController+SoCTransition.swift */,
-			);
-			path = TransitionManager;
-			sourceTree = "<group>";
-		};
-		D8735D142237A2C1000A6493 /* SOCAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				D8735D152237A355000A6493 /* SoCCircleRectSpreadAnimation.swift */,
-			);
-			path = SOCAnimation;
 			sourceTree = "<group>";
 		};
 		D8735D172237ABED000A6493 /* Comment */ = {
@@ -239,6 +226,41 @@
 			isa = PBXGroup;
 			children = (
 				D8735D2522380100000A6493 /* DetailTopInteractiveView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8735D272238BFD6000A6493 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D282238BFEC000A6493 /* MenuViewController.swift */,
+				D8735D312238D3C7000A6493 /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		D8735D2E2238CEFB000A6493 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D362238D789000A6493 /* View */,
+				D8735D2F2238CF0F000A6493 /* UserViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		D8735D312238D3C7000A6493 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D322238D3DA000A6493 /* MenuTopView.swift */,
+				D8735D392238E6E8000A6493 /* MenuCopyrightView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8735D362238D789000A6493 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D372238D79D000A6493 /* UserTopView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,9 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8735D2622380100000A6493 /* DetailTopInteractiveView.swift in Sources */,
+				D8735D352238D423000A6493 /* Constant.swift in Sources */,
+				D8735D302238CF0F000A6493 /* UserViewController.swift in Sources */,
 				D8735D192237ABFE000A6493 /* CommentViewController.swift in Sources */,
-				D8735D0D22378414000A6493 /* SoCTransitionManager.swift in Sources */,
-				D8735D162237A355000A6493 /* SoCCircleRectSpreadAnimation.swift in Sources */,
 				D86A960922364861007829E7 /* HomeCollectionViewCell.swift in Sources */,
 				D86A95EC22363ADC007829E7 /* AppDelegate.swift in Sources */,
 				D8735D232237F5F3000A6493 /* UIColor+HexadecimalColor.swift in Sources */,
@@ -382,12 +404,14 @@
 				D86A9600223640D6007829E7 /* HomeViewController.swift in Sources */,
 				D86A96062236444D007829E7 /* NavigationSettingUtils.swift in Sources */,
 				D8735D212237E5DB000A6493 /* HomeModel.swift in Sources */,
-				D8735D0F223786AE000A6493 /* SoCTransitionAnimation.swift in Sources */,
+				D8735D2D2238C98F000A6493 /* FadeAnimation.swift in Sources */,
 				D86A96032236414F007829E7 /* RootNavigationController.swift in Sources */,
+				D8735D3A2238E6E8000A6493 /* MenuCopyrightView.swift in Sources */,
+				D8735D292238BFEC000A6493 /* MenuViewController.swift in Sources */,
 				D8735D1F2237E3E1000A6493 /* HomeDataManager.swift in Sources */,
+				D8735D382238D79D000A6493 /* UserTopView.swift in Sources */,
 				D8735D0A2237824A000A6493 /* DetailViewController.swift in Sources */,
-				D8735D13223799A3000A6493 /* UIViewController+SoCTransition.swift in Sources */,
-				D8735D1122378910000A6493 /* SoCInteractiveTransition.swift in Sources */,
+				D8735D332238D3DA000A6493 /* MenuTopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

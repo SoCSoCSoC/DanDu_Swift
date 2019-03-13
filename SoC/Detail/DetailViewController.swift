@@ -18,6 +18,8 @@ class DetailViewController: UIViewController {
         if #available(iOS 11.0, *) {
             webViwe.scrollView.contentInsetAdjustmentBehavior = .never
         }else {}
+        webViwe.uiDelegate = self
+        webViwe.navigationDelegate = self
         webViwe.scrollView.delegate = self
         let url : URL = URL(string: "\(contentUrl! as String)?client=iOS")!
         let request : URLRequest = URLRequest(url: url)
@@ -28,10 +30,6 @@ class DetailViewController: UIViewController {
     lazy var topInteractiveView : DetailTopInteractiveView = {
         let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
         let topInterView = DetailTopInteractiveView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: statusBarHeight+44))
-        weak var weakSelf = self
-        topInterView.backBtnEventHandler = {()->Void in
-            weakSelf!.navigationController?.popViewController(animated: true)
-        }
         return topInterView
     }()
     
@@ -42,6 +40,9 @@ class DetailViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(mainWebView)
         view.addSubview(topInteractiveView)
+        topInteractiveView.delegate = self
+        test()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -51,6 +52,11 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         NavigationSettingUtils.setNavBarTransparent()
+    }
+    
+    
+    func test() {
+        mainWebView.configuration.userContentController.add(self, name: "moreComments")
     }
     
     
@@ -72,7 +78,11 @@ class DetailViewController: UIViewController {
 
 }
 
-extension DetailViewController : UIScrollViewDelegate {
+extension DetailViewController : UIScrollViewDelegate, DetailTopInterViewEventProtocol, WKScriptMessageHandler, WKUIDelegate, WKNavigationDelegate {
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        print("...")
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetToShow = 200.0
         let alpha = 1 - (Float(offsetToShow) - Float(scrollView.contentOffset.y)) / Float(offsetToShow)
@@ -88,6 +98,10 @@ extension DetailViewController : UIScrollViewDelegate {
         let theImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return theImage!
+    }
+    
+    func backEvent() {
+        navigationController?.popViewController(animated: true)
     }
 }
 

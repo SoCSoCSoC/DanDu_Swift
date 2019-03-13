@@ -10,15 +10,18 @@ import UIKit
 import SnapKit
 
 
+protocol DetailTopInterViewEventProtocol {
+    func backEvent()
+}
+
 class DetailTopInteractiveView: UIImageView {
-    
-    var backBtnEventHandler : (()->Void)?
+    var delegate : DetailTopInterViewEventProtocol?
     
     lazy var backBtn : UIButton = {
         let btn = UIButton(type: UIButton.ButtonType.custom)
         btn.setImage(UIImage(named: "后退_12x21_"), for: UIControl.State.normal)
         btn.contentHorizontalAlignment = .center
-        btn.addTarget(self, action: #selector(back(sender:)), for: UIControl.Event.touchDragInside)
+        btn.addTarget(self, action: #selector(back(sender:)), for: UIControl.Event.touchUpInside)
         return btn
     }()
     lazy var collectBtn : UIButton = {
@@ -83,8 +86,8 @@ class DetailTopInteractiveView: UIImageView {
     }
     
     @objc func back(sender : UIButton) {
-        if backBtnEventHandler != nil {
-            backBtnEventHandler!()
+        if delegate != nil {
+            delegate?.backEvent()
         }
     }
 }

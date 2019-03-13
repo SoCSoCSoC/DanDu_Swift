@@ -11,6 +11,8 @@ import Alamofire
 
 class HomeViewController: UIViewController {
     
+     let transition = FadeAnimator()
+    
     lazy var homeCollection : UICollectionView = {
         let layout = UICollectionViewFlowLayout.init()
         layout.minimumLineSpacing = 0.0
@@ -69,14 +71,28 @@ class HomeViewController: UIViewController {
         leftBtn.contentMode = .center
         leftBtn.tintColor = .white
         leftBtn.setImage(UIImage(named: "导航_22x12_"), for: UIControl.State.normal)
+        leftBtn.addTarget(self, action: #selector(toMenuPage), for: UIControl.Event.touchUpInside)
         
         let rightBtn = UIButton.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         rightBtn.contentMode = .center
         rightBtn.tintColor = .white
         rightBtn.setImage(UIImage(named: "Profile_25x25_"), for: UIControl.State.normal)
+        rightBtn.addTarget(self, action: #selector(toUserPage), for: UIControl.Event.touchUpInside)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightBtn)
         
+    }
+    
+    @objc func toMenuPage() {
+        let menuVC = MenuViewController()
+        menuVC.transitioningDelegate = self
+        present(menuVC, animated: true, completion: nil)
+    }
+    
+    @objc func toUserPage() {
+        let userVC = UserViewController()
+        userVC.transitioningDelegate = self
+        present(userVC, animated: true, completion: nil)
     }
     
     /// 状态栏样式
@@ -93,11 +109,12 @@ class HomeViewController: UIViewController {
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .slide
     }
+
     
 }
 
 
-extension HomeViewController : UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate , UIGestureRecognizerDelegate {
+extension HomeViewController : UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate , UIViewControllerTransitioningDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count;
     }
@@ -120,10 +137,18 @@ extension HomeViewController : UICollectionViewDelegateFlowLayout, UICollectionV
         navigationController?.pushViewController(detailVC, animated: true)
     }
     
-    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        
-        
-        return true
+    // 提供弹出时的动画
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.animationType = AnimationType.present
+        transition.direction = presented.isKind(of: MenuViewController.self) ? .left : .right
+        return transition
+    }
+    
+    // 提供消失时的动画
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.animationType = AnimationType.dismiss
+        transition.direction = dismissed.isKind(of: MenuViewController.self) ? .left : .right
+        return transition
     }
     
 }
