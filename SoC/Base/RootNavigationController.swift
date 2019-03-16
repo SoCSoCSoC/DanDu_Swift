@@ -14,9 +14,6 @@ class RootNavigationController: UINavigationController {
         super.viewDidLoad()
         NavigationSettingUtils.setNavBarTransparent()
     }
-    
-    
-
 }
 
 extension UINavigationController {

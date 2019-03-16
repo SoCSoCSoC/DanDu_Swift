@@ -20,7 +20,6 @@
 		D8735D0A2237824A000A6493 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D092237824A000A6493 /* DetailViewController.swift */; };
 		D8735D192237ABFE000A6493 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D182237ABFE000A6493 /* CommentViewController.swift */; };
 		D8735D1D2237E3C2000A6493 /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = D8735D1C2237E3C2000A6493 /* Home.json */; };
-		D8735D1F2237E3E1000A6493 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D1E2237E3E1000A6493 /* HomeDataManager.swift */; };
 		D8735D212237E5DB000A6493 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D202237E5DB000A6493 /* HomeModel.swift */; };
 		D8735D232237F5F3000A6493 /* UIColor+HexadecimalColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D222237F5F3000A6493 /* UIColor+HexadecimalColor.swift */; };
 		D8735D2622380100000A6493 /* DetailTopInteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D2522380100000A6493 /* DetailTopInteractiveView.swift */; };
@@ -31,6 +30,61 @@
 		D8735D352238D423000A6493 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D342238D423000A6493 /* Constant.swift */; };
 		D8735D382238D79D000A6493 /* UserTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D372238D79D000A6493 /* UserTopView.swift */; };
 		D8735D3A2238E6E8000A6493 /* MenuCopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D392238E6E8000A6493 /* MenuCopyrightView.swift */; };
+		D8735D61223933A6000A6493 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D60223933A6000A6493 /* CalendarViewController.swift */; };
+		D8735D63223933AF000A6493 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D62223933AF000A6493 /* TalkViewController.swift */; };
+		D8735D65223933B8000A6493 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D64223933B8000A6493 /* FilmViewController.swift */; };
+		D8735D67223933C0000A6493 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D66223933C0000A6493 /* SoundViewController.swift */; };
+		D8735D6B223933D8000A6493 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8735D6A223933D8000A6493 /* SearchViewController.swift */; };
+		D8C93750223D56E600DE958A /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9374F223D56E600DE958A /* TimeUtils.swift */; };
+		D8C93753223D5BC600DE958A /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93752223D5BC600DE958A /* SegmentView.swift */; };
+		D8C93756223D61E600DE958A /* TalkQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93755223D61E600DE958A /* TalkQuestionViewController.swift */; };
+		D8C93758223D61F100DE958A /* TalkReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93757223D61F100DE958A /* TalkReaderViewController.swift */; };
+		D8C9375D223D66C000DE958A /* TalkQuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9375C223D66C000DE958A /* TalkQuestionDataManager.swift */; };
+		D8C93760223D672500DE958A /* TalkQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9375E223D672500DE958A /* TalkQuestionTableViewCell.swift */; };
+		D8C93761223D672500DE958A /* TalkQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C9375F223D672500DE958A /* TalkQuestionTableViewCell.xib */; };
+		D8C93764223D6AA900DE958A /* TalkReaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93762223D6AA900DE958A /* TalkReaderTableViewCell.swift */; };
+		D8C93765223D6AA900DE958A /* TalkReaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C93763223D6AA900DE958A /* TalkReaderTableViewCell.xib */; };
+		D8C93767223D6D7700DE958A /* TalkReaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93766223D6D7700DE958A /* TalkReaderModel.swift */; };
+		D8C93769223D6E2200DE958A /* TalkReaderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93768223D6E2200DE958A /* TalkReaderDataManager.swift */; };
+		D8CFD790223CD47A0074A0A5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD78F223CD47A0074A0A5 /* HomeViewModel.swift */; };
+		D8CFD7A3223CF1E40074A0A5 /* calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD791223CF1E20074A0A5 /* calendar.json */; };
+		D8CFD7A4223CF1E40074A0A5 /* 经典重现.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD792223CF1E20074A0A5 /* 经典重现.json */; };
+		D8CFD7A5223CF1E40074A0A5 /* reader.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD793223CF1E20074A0A5 /* reader.json */; };
+		D8CFD7A6223CF1E40074A0A5 /* question.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD794223CF1E20074A0A5 /* question.json */; };
+		D8CFD7A7223CF1E40074A0A5 /* 匿名者.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD795223CF1E20074A0A5 /* 匿名者.json */; };
+		D8CFD7A8223CF1E40074A0A5 /* 声音.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD796223CF1E20074A0A5 /* 声音.json */; };
+		D8CFD7A9223CF1E40074A0A5 /* 影像.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD797223CF1E30074A0A5 /* 影像.json */; };
+		D8CFD7AA223CF1E40074A0A5 /* word.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD798223CF1E30074A0A5 /* word.json */; };
+		D8CFD7AB223CF1E40074A0A5 /* 搜索功能.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD799223CF1E30074A0A5 /* 搜索功能.json */; };
+		D8CFD7AC223CF1E40074A0A5 /* 新书首发.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD79A223CF1E30074A0A5 /* 新书首发.json */; };
+		D8CFD7AD223CF1E40074A0A5 /* 更多评论.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD79B223CF1E30074A0A5 /* 更多评论.json */; };
+		D8CFD7AE223CF1E40074A0A5 /* unite.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD79C223CF1E30074A0A5 /* unite.json */; };
+		D8CFD7AF223CF1E40074A0A5 /* weekend.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD79D223CF1E30074A0A5 /* weekend.json */; };
+		D8CFD7B0223CF1E40074A0A5 /* 外刊翻译.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD79E223CF1E40074A0A5 /* 外刊翻译.json */; };
+		D8CFD7B1223CF1E40074A0A5 /* 视觉.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD79F223CF1E40074A0A5 /* 视觉.json */; };
+		D8CFD7B2223CF1E40074A0A5 /* artcle.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD7A0223CF1E40074A0A5 /* artcle.json */; };
+		D8CFD7B3223CF1E40074A0A5 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD7A1223CF1E40074A0A5 /* search.json */; };
+		D8CFD7B4223CF1E40074A0A5 /* author_dandu.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD7A2223CF1E40074A0A5 /* author_dandu.json */; };
+		D8CFD7BE223CFA6A0074A0A5 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7BC223CFA6A0074A0A5 /* WordViewController.swift */; };
+		D8CFD7C2223CFF470074A0A5 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7C0223CFF470074A0A5 /* WordCollectionViewCell.swift */; };
+		D8CFD7C3223CFF470074A0A5 /* WordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD7C1223CFF470074A0A5 /* WordCollectionViewCell.xib */; };
+		D8CFD7C7223D17660074A0A5 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7C6223D17660074A0A5 /* WordModel.swift */; };
+		D8CFD7C9223D17EF0074A0A5 /* WordDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7C8223D17EF0074A0A5 /* WordDataManager.swift */; };
+		D8CFD7D1223D1E3B0074A0A5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7CF223D1E3B0074A0A5 /* ListViewController.swift */; };
+		D8CFD7D9223D24E20074A0A5 /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7D8223D24E20074A0A5 /* TopNavView.swift */; };
+		D8CFD7DF223D34630074A0A5 /* WordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7DE223D34630074A0A5 /* WordHeaderView.swift */; };
+		D8CFD7E2223D3EC20074A0A5 /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7E1223D3EC20074A0A5 /* ListDataManager.swift */; };
+		D8CFD7E8223D40800074A0A5 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7E6223D40800074A0A5 /* ListTableViewCell.swift */; };
+		D8CFD7E9223D40800074A0A5 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD7E7223D40800074A0A5 /* ListTableViewCell.xib */; };
+		D8CFD7EC223D45CF0074A0A5 /* AuthorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7EB223D45CF0074A0A5 /* AuthorListViewController.swift */; };
+		D8CFD7F2223D49140074A0A5 /* AuthorListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7F0223D49140074A0A5 /* AuthorListCollectionViewCell.swift */; };
+		D8CFD7F3223D49140074A0A5 /* AuthorListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD7F1223D49140074A0A5 /* AuthorListCollectionViewCell.xib */; };
+		D8CFD7F5223D4B920074A0A5 /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7F4223D4B920074A0A5 /* AuthorModel.swift */; };
+		D8CFD7F7223D4B9E0074A0A5 /* AuthorDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7F6223D4B9E0074A0A5 /* AuthorDataManager.swift */; };
+		D8CFD7FA223D4E9A0074A0A5 /* AuthorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD7F9223D4E9A0074A0A5 /* AuthorDetailViewController.swift */; };
+		D8CFD801223D50B60074A0A5 /* CalendarDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD800223D50B60074A0A5 /* CalendarDataManager.swift */; };
+		D8CFD804223D51DB0074A0A5 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD802223D51DB0074A0A5 /* CalendarCollectionViewCell.swift */; };
+		D8CFD805223D51DB0074A0A5 /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD803223D51DB0074A0A5 /* CalendarCollectionViewCell.xib */; };
 		E19CC0496ADD2186E11217B8 /* Pods_SoC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B50173E4F43CCDED7E8BF20 /* Pods_SoC.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +107,6 @@
 		D8735D092237824A000A6493 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D8735D182237ABFE000A6493 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		D8735D1C2237E3C2000A6493 /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
-		D8735D1E2237E3E1000A6493 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
 		D8735D202237E5DB000A6493 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		D8735D222237F5F3000A6493 /* UIColor+HexadecimalColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexadecimalColor.swift"; sourceTree = "<group>"; };
 		D8735D2522380100000A6493 /* DetailTopInteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopInteractiveView.swift; sourceTree = "<group>"; };
@@ -64,6 +117,61 @@
 		D8735D342238D423000A6493 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D8735D372238D79D000A6493 /* UserTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTopView.swift; sourceTree = "<group>"; };
 		D8735D392238E6E8000A6493 /* MenuCopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCopyrightView.swift; sourceTree = "<group>"; };
+		D8735D60223933A6000A6493 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D8735D62223933AF000A6493 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		D8735D64223933B8000A6493 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		D8735D66223933C0000A6493 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		D8735D6A223933D8000A6493 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D8C9374F223D56E600DE958A /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		D8C93752223D5BC600DE958A /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		D8C93755223D61E600DE958A /* TalkQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkQuestionViewController.swift; sourceTree = "<group>"; };
+		D8C93757223D61F100DE958A /* TalkReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkReaderViewController.swift; sourceTree = "<group>"; };
+		D8C9375C223D66C000DE958A /* TalkQuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkQuestionDataManager.swift; sourceTree = "<group>"; };
+		D8C9375E223D672500DE958A /* TalkQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		D8C9375F223D672500DE958A /* TalkQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkQuestionTableViewCell.xib; sourceTree = "<group>"; };
+		D8C93762223D6AA900DE958A /* TalkReaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkReaderTableViewCell.swift; sourceTree = "<group>"; };
+		D8C93763223D6AA900DE958A /* TalkReaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkReaderTableViewCell.xib; sourceTree = "<group>"; };
+		D8C93766223D6D7700DE958A /* TalkReaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkReaderModel.swift; sourceTree = "<group>"; };
+		D8C93768223D6E2200DE958A /* TalkReaderDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkReaderDataManager.swift; sourceTree = "<group>"; };
+		D8CFD78F223CD47A0074A0A5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D8CFD791223CF1E20074A0A5 /* calendar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = calendar.json; sourceTree = "<group>"; };
+		D8CFD792223CF1E20074A0A5 /* 经典重现.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "经典重现.json"; sourceTree = "<group>"; };
+		D8CFD793223CF1E20074A0A5 /* reader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reader.json; sourceTree = "<group>"; };
+		D8CFD794223CF1E20074A0A5 /* question.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = question.json; sourceTree = "<group>"; };
+		D8CFD795223CF1E20074A0A5 /* 匿名者.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "匿名者.json"; sourceTree = "<group>"; };
+		D8CFD796223CF1E20074A0A5 /* 声音.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "声音.json"; sourceTree = "<group>"; };
+		D8CFD797223CF1E30074A0A5 /* 影像.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "影像.json"; sourceTree = "<group>"; };
+		D8CFD798223CF1E30074A0A5 /* word.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = word.json; sourceTree = "<group>"; };
+		D8CFD799223CF1E30074A0A5 /* 搜索功能.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "搜索功能.json"; sourceTree = "<group>"; };
+		D8CFD79A223CF1E30074A0A5 /* 新书首发.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "新书首发.json"; sourceTree = "<group>"; };
+		D8CFD79B223CF1E30074A0A5 /* 更多评论.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "更多评论.json"; sourceTree = "<group>"; };
+		D8CFD79C223CF1E30074A0A5 /* unite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = unite.json; sourceTree = "<group>"; };
+		D8CFD79D223CF1E30074A0A5 /* weekend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekend.json; sourceTree = "<group>"; };
+		D8CFD79E223CF1E40074A0A5 /* 外刊翻译.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "外刊翻译.json"; sourceTree = "<group>"; };
+		D8CFD79F223CF1E40074A0A5 /* 视觉.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "视觉.json"; sourceTree = "<group>"; };
+		D8CFD7A0223CF1E40074A0A5 /* artcle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artcle.json; sourceTree = "<group>"; };
+		D8CFD7A1223CF1E40074A0A5 /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		D8CFD7A2223CF1E40074A0A5 /* author_dandu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = author_dandu.json; sourceTree = "<group>"; };
+		D8CFD7BC223CFA6A0074A0A5 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		D8CFD7C0223CFF470074A0A5 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8CFD7C1223CFF470074A0A5 /* WordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8CFD7C6223D17660074A0A5 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		D8CFD7C8223D17EF0074A0A5 /* WordDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataManager.swift; sourceTree = "<group>"; };
+		D8CFD7CF223D1E3B0074A0A5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D8CFD7D8223D24E20074A0A5 /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
+		D8CFD7DE223D34630074A0A5 /* WordHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordHeaderView.swift; sourceTree = "<group>"; };
+		D8CFD7E1223D3EC20074A0A5 /* ListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
+		D8CFD7E6223D40800074A0A5 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		D8CFD7E7223D40800074A0A5 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		D8CFD7EB223D45CF0074A0A5 /* AuthorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorListViewController.swift; sourceTree = "<group>"; };
+		D8CFD7F0223D49140074A0A5 /* AuthorListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8CFD7F1223D49140074A0A5 /* AuthorListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8CFD7F4223D4B920074A0A5 /* AuthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModel.swift; sourceTree = "<group>"; };
+		D8CFD7F6223D4B9E0074A0A5 /* AuthorDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDataManager.swift; sourceTree = "<group>"; };
+		D8CFD7F9223D4E9A0074A0A5 /* AuthorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailViewController.swift; sourceTree = "<group>"; };
+		D8CFD800223D50B60074A0A5 /* CalendarDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDataManager.swift; sourceTree = "<group>"; };
+		D8CFD802223D51DB0074A0A5 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8CFD803223D51DB0074A0A5 /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +225,16 @@
 			isa = PBXGroup;
 			children = (
 				D86A95EB22363ADC007829E7 /* AppDelegate.swift */,
+				D8CFD7F8223D4E810074A0A5 /* AuthorDetail */,
+				D8CFD7EA223D45B90074A0A5 /* AuthorList */,
+				D8CFD7D3223D1E640074A0A5 /* Common */,
+				D8CFD7CA223D1D790074A0A5 /* List */,
+				D8735D5F2239337A000A6493 /* Calendar */,
+				D8735D5E22393366000A6493 /* Talk */,
+				D8735D5D22393360000A6493 /* Films */,
+				D8735D5C22393357000A6493 /* Sounds */,
+				D8735D5B22393352000A6493 /* Words */,
+				D8735D5A22393346000A6493 /* Search */,
 				D86A96012236412C007829E7 /* Base */,
 				D86A95FD223640A4007829E7 /* Home */,
 				D8735D272238BFD6000A6493 /* Menu */,
@@ -136,6 +254,8 @@
 		D86A95FD223640A4007829E7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D8CFD78E223CD4510074A0A5 /* ViewModel */,
+				D899B632223B35FB00D3D89A /* ModalAnimation */,
 				D8735D1B2237E329000A6493 /* Data */,
 				D8735D1A2237E324000A6493 /* Model */,
 				D86A960722364845007829E7 /* View */,
@@ -167,7 +287,7 @@
 				D86A96052236444D007829E7 /* NavigationSettingUtils.swift */,
 				D84B1DA72236A66100B8E166 /* TextUtils.swift */,
 				D8735D222237F5F3000A6493 /* UIColor+HexadecimalColor.swift */,
-				D8735D2C2238C98F000A6493 /* FadeAnimation.swift */,
+				D8C9374F223D56E600DE958A /* TimeUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,6 +303,24 @@
 		D86A962C2236909D007829E7 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				D8CFD791223CF1E20074A0A5 /* calendar.json */,
+				D8CFD79B223CF1E30074A0A5 /* 更多评论.json */,
+				D8CFD792223CF1E20074A0A5 /* 经典重现.json */,
+				D8CFD795223CF1E20074A0A5 /* 匿名者.json */,
+				D8CFD796223CF1E20074A0A5 /* 声音.json */,
+				D8CFD79F223CF1E40074A0A5 /* 视觉.json */,
+				D8CFD799223CF1E30074A0A5 /* 搜索功能.json */,
+				D8CFD794223CF1E20074A0A5 /* question.json */,
+				D8CFD793223CF1E20074A0A5 /* reader.json */,
+				D8CFD79E223CF1E40074A0A5 /* 外刊翻译.json */,
+				D8CFD79A223CF1E30074A0A5 /* 新书首发.json */,
+				D8CFD797223CF1E30074A0A5 /* 影像.json */,
+				D8CFD7A0223CF1E40074A0A5 /* artcle.json */,
+				D8CFD7A2223CF1E40074A0A5 /* author_dandu.json */,
+				D8CFD7A1223CF1E40074A0A5 /* search.json */,
+				D8CFD79C223CF1E30074A0A5 /* unite.json */,
+				D8CFD79D223CF1E30074A0A5 /* weekend.json */,
+				D8CFD798223CF1E30074A0A5 /* word.json */,
 				D86A962D223690CA007829E7 /* PMingLiU.ttf */,
 			);
 			path = resource;
@@ -217,7 +355,6 @@
 			isa = PBXGroup;
 			children = (
 				D8735D1C2237E3C2000A6493 /* Home.json */,
-				D8735D1E2237E3E1000A6493 /* HomeDataManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -263,6 +400,239 @@
 				D8735D372238D79D000A6493 /* UserTopView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D8735D5A22393346000A6493 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D6A223933D8000A6493 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D8735D5B22393352000A6493 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7BC223CFA6A0074A0A5 /* WordViewController.swift */,
+				D8CFD7C5223D174D0074A0A5 /* DataManager */,
+				D8CFD7C4223D17480074A0A5 /* Model */,
+				D8CFD7B7223CF8060074A0A5 /* View */,
+			);
+			path = Words;
+			sourceTree = "<group>";
+		};
+		D8735D5C22393357000A6493 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D66223933C0000A6493 /* SoundViewController.swift */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D8735D5D22393360000A6493 /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D64223933B8000A6493 /* FilmViewController.swift */,
+			);
+			path = Films;
+			sourceTree = "<group>";
+		};
+		D8735D5E22393366000A6493 /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9375B223D66A500DE958A /* Model */,
+				D8C93759223D667400DE958A /* DataManager */,
+				D8C93754223D61CF00DE958A /* Controller */,
+				D8C93751223D5BAA00DE958A /* View */,
+			);
+			path = Talk;
+			sourceTree = "<group>";
+		};
+		D8735D5F2239337A000A6493 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7FB223D4FA50074A0A5 /* View */,
+				D8CFD7FD223D4FAF0074A0A5 /* DataManager */,
+				D8735D60223933A6000A6493 /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		D899B632223B35FB00D3D89A /* ModalAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D2C2238C98F000A6493 /* FadeAnimation.swift */,
+			);
+			path = ModalAnimation;
+			sourceTree = "<group>";
+		};
+		D8C93751223D5BAA00DE958A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8C93752223D5BC600DE958A /* SegmentView.swift */,
+				D8C9375E223D672500DE958A /* TalkQuestionTableViewCell.swift */,
+				D8C9375F223D672500DE958A /* TalkQuestionTableViewCell.xib */,
+				D8C93762223D6AA900DE958A /* TalkReaderTableViewCell.swift */,
+				D8C93763223D6AA900DE958A /* TalkReaderTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8C93754223D61CF00DE958A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8735D62223933AF000A6493 /* TalkViewController.swift */,
+				D8C93755223D61E600DE958A /* TalkQuestionViewController.swift */,
+				D8C93757223D61F100DE958A /* TalkReaderViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8C93759223D667400DE958A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9375C223D66C000DE958A /* TalkQuestionDataManager.swift */,
+				D8C93768223D6E2200DE958A /* TalkReaderDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		D8C9375B223D66A500DE958A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8C93766223D6D7700DE958A /* TalkReaderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8CFD78E223CD4510074A0A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD78F223CD47A0074A0A5 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8CFD7B7223CF8060074A0A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7C0223CFF470074A0A5 /* WordCollectionViewCell.swift */,
+				D8CFD7C1223CFF470074A0A5 /* WordCollectionViewCell.xib */,
+				D8CFD7DE223D34630074A0A5 /* WordHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8CFD7C4223D17480074A0A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7C6223D17660074A0A5 /* WordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8CFD7C5223D174D0074A0A5 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7C8223D17EF0074A0A5 /* WordDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		D8CFD7CA223D1D790074A0A5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7E5223D40760074A0A5 /* View */,
+				D8CFD7E0223D3EB40074A0A5 /* DataManager */,
+				D8CFD7CF223D1E3B0074A0A5 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D8CFD7D3223D1E640074A0A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7D8223D24E20074A0A5 /* TopNavView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D8CFD7E0223D3EB40074A0A5 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7E1223D3EC20074A0A5 /* ListDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		D8CFD7E5223D40760074A0A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7E6223D40800074A0A5 /* ListTableViewCell.swift */,
+				D8CFD7E7223D40800074A0A5 /* ListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8CFD7EA223D45B90074A0A5 /* AuthorList */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7EF223D48E20074A0A5 /* DataManager */,
+				D8CFD7EE223D48DE0074A0A5 /* Model */,
+				D8CFD7ED223D48D70074A0A5 /* View */,
+				D8CFD7EB223D45CF0074A0A5 /* AuthorListViewController.swift */,
+			);
+			path = AuthorList;
+			sourceTree = "<group>";
+		};
+		D8CFD7ED223D48D70074A0A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7F0223D49140074A0A5 /* AuthorListCollectionViewCell.swift */,
+				D8CFD7F1223D49140074A0A5 /* AuthorListCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8CFD7EE223D48DE0074A0A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7F4223D4B920074A0A5 /* AuthorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8CFD7EF223D48E20074A0A5 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7F6223D4B9E0074A0A5 /* AuthorDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		D8CFD7F8223D4E810074A0A5 /* AuthorDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD7F9223D4E9A0074A0A5 /* AuthorDetailViewController.swift */,
+			);
+			path = AuthorDetail;
+			sourceTree = "<group>";
+		};
+		D8CFD7FB223D4FA50074A0A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD802223D51DB0074A0A5 /* CalendarCollectionViewCell.swift */,
+				D8CFD803223D51DB0074A0A5 /* CalendarCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8CFD7FD223D4FAF0074A0A5 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFD800223D50B60074A0A5 /* CalendarDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +698,32 @@
 				D86A95F622363ADE007829E7 /* LaunchScreen.storyboard in Resources */,
 				D86A962E223690CA007829E7 /* PMingLiU.ttf in Resources */,
 				D8735D1D2237E3C2000A6493 /* Home.json in Resources */,
+				D8CFD7A9223CF1E40074A0A5 /* 影像.json in Resources */,
+				D8CFD7E9223D40800074A0A5 /* ListTableViewCell.xib in Resources */,
+				D8CFD7AE223CF1E40074A0A5 /* unite.json in Resources */,
+				D8CFD7A7223CF1E40074A0A5 /* 匿名者.json in Resources */,
 				D86A95F322363ADE007829E7 /* Assets.xcassets in Resources */,
+				D8CFD7A8223CF1E40074A0A5 /* 声音.json in Resources */,
+				D8CFD7A3223CF1E40074A0A5 /* calendar.json in Resources */,
+				D8CFD7AF223CF1E40074A0A5 /* weekend.json in Resources */,
+				D8CFD7B1223CF1E40074A0A5 /* 视觉.json in Resources */,
 				D86A95F122363ADC007829E7 /* Main.storyboard in Resources */,
+				D8C93761223D672500DE958A /* TalkQuestionTableViewCell.xib in Resources */,
+				D8CFD7AB223CF1E40074A0A5 /* 搜索功能.json in Resources */,
+				D8CFD7B3223CF1E40074A0A5 /* search.json in Resources */,
+				D8CFD7A6223CF1E40074A0A5 /* question.json in Resources */,
+				D8CFD7A5223CF1E40074A0A5 /* reader.json in Resources */,
+				D8CFD7AC223CF1E40074A0A5 /* 新书首发.json in Resources */,
+				D8CFD7F3223D49140074A0A5 /* AuthorListCollectionViewCell.xib in Resources */,
+				D8CFD7B2223CF1E40074A0A5 /* artcle.json in Resources */,
+				D8CFD7AD223CF1E40074A0A5 /* 更多评论.json in Resources */,
+				D8CFD805223D51DB0074A0A5 /* CalendarCollectionViewCell.xib in Resources */,
+				D8CFD7B4223CF1E40074A0A5 /* author_dandu.json in Resources */,
+				D8CFD7A4223CF1E40074A0A5 /* 经典重现.json in Resources */,
+				D8CFD7AA223CF1E40074A0A5 /* word.json in Resources */,
+				D8CFD7B0223CF1E40074A0A5 /* 外刊翻译.json in Resources */,
+				D8CFD7C3223CFF470074A0A5 /* WordCollectionViewCell.xib in Resources */,
+				D8C93765223D6AA900DE958A /* TalkReaderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,22 +735,28 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SoC/Pods-SoC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,15 +769,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SoC-checkManifestLockResult.txt",
 			);
@@ -393,25 +789,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C93767223D6D7700DE958A /* TalkReaderModel.swift in Sources */,
+				D8CFD7D1223D1E3B0074A0A5 /* ListViewController.swift in Sources */,
+				D8735D61223933A6000A6493 /* CalendarViewController.swift in Sources */,
 				D8735D2622380100000A6493 /* DetailTopInteractiveView.swift in Sources */,
+				D8CFD7BE223CFA6A0074A0A5 /* WordViewController.swift in Sources */,
+				D8C93753223D5BC600DE958A /* SegmentView.swift in Sources */,
 				D8735D352238D423000A6493 /* Constant.swift in Sources */,
 				D8735D302238CF0F000A6493 /* UserViewController.swift in Sources */,
 				D8735D192237ABFE000A6493 /* CommentViewController.swift in Sources */,
+				D8CFD7C9223D17EF0074A0A5 /* WordDataManager.swift in Sources */,
+				D8CFD7F2223D49140074A0A5 /* AuthorListCollectionViewCell.swift in Sources */,
 				D86A960922364861007829E7 /* HomeCollectionViewCell.swift in Sources */,
+				D8C93756223D61E600DE958A /* TalkQuestionViewController.swift in Sources */,
+				D8CFD790223CD47A0074A0A5 /* HomeViewModel.swift in Sources */,
 				D86A95EC22363ADC007829E7 /* AppDelegate.swift in Sources */,
+				D8CFD7E8223D40800074A0A5 /* ListTableViewCell.swift in Sources */,
 				D8735D232237F5F3000A6493 /* UIColor+HexadecimalColor.swift in Sources */,
+				D8CFD7C2223CFF470074A0A5 /* WordCollectionViewCell.swift in Sources */,
+				D8C93764223D6AA900DE958A /* TalkReaderTableViewCell.swift in Sources */,
 				D84B1DA82236A66100B8E166 /* TextUtils.swift in Sources */,
+				D8CFD7FA223D4E9A0074A0A5 /* AuthorDetailViewController.swift in Sources */,
+				D8C93750223D56E600DE958A /* TimeUtils.swift in Sources */,
 				D86A9600223640D6007829E7 /* HomeViewController.swift in Sources */,
+				D8735D63223933AF000A6493 /* TalkViewController.swift in Sources */,
 				D86A96062236444D007829E7 /* NavigationSettingUtils.swift in Sources */,
+				D8C93758223D61F100DE958A /* TalkReaderViewController.swift in Sources */,
+				D8735D65223933B8000A6493 /* FilmViewController.swift in Sources */,
 				D8735D212237E5DB000A6493 /* HomeModel.swift in Sources */,
+				D8735D6B223933D8000A6493 /* SearchViewController.swift in Sources */,
 				D8735D2D2238C98F000A6493 /* FadeAnimation.swift in Sources */,
+				D8CFD804223D51DB0074A0A5 /* CalendarCollectionViewCell.swift in Sources */,
+				D8CFD7C7223D17660074A0A5 /* WordModel.swift in Sources */,
 				D86A96032236414F007829E7 /* RootNavigationController.swift in Sources */,
+				D8CFD7E2223D3EC20074A0A5 /* ListDataManager.swift in Sources */,
+				D8CFD801223D50B60074A0A5 /* CalendarDataManager.swift in Sources */,
 				D8735D3A2238E6E8000A6493 /* MenuCopyrightView.swift in Sources */,
 				D8735D292238BFEC000A6493 /* MenuViewController.swift in Sources */,
-				D8735D1F2237E3E1000A6493 /* HomeDataManager.swift in Sources */,
+				D8CFD7F5223D4B920074A0A5 /* AuthorModel.swift in Sources */,
 				D8735D382238D79D000A6493 /* UserTopView.swift in Sources */,
+				D8CFD7DF223D34630074A0A5 /* WordHeaderView.swift in Sources */,
+				D8CFD7EC223D45CF0074A0A5 /* AuthorListViewController.swift in Sources */,
+				D8CFD7D9223D24E20074A0A5 /* TopNavView.swift in Sources */,
+				D8CFD7F7223D4B9E0074A0A5 /* AuthorDataManager.swift in Sources */,
+				D8C93760223D672500DE958A /* TalkQuestionTableViewCell.swift in Sources */,
 				D8735D0A2237824A000A6493 /* DetailViewController.swift in Sources */,
 				D8735D332238D3DA000A6493 /* MenuTopView.swift in Sources */,
+				D8C93769223D6E2200DE958A /* TalkReaderDataManager.swift in Sources */,
+				D8735D67223933C0000A6493 /* SoundViewController.swift in Sources */,
+				D8C9375D223D66C000DE958A /* TalkQuestionDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +985,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW8YY8GRZZ;
 				INFOPLIST_FILE = SoC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,6 +1005,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW8YY8GRZZ;
 				INFOPLIST_FILE = SoC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

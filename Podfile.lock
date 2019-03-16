@@ -2,28 +2,51 @@ PODS:
   - Alamofire (4.8.1)
   - AlamofireImage (3.5.0):
     - Alamofire (~> 4.8)
+  - Differentiator (3.1.0)
   - HandyJSON (4.2.1)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - HandyJSON
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - Differentiator
     - HandyJSON
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 8e3597cec7468970ce5007faf885d86958f2294d
+PODFILE CHECKSUM: 411cb395cf0284036ea43b1cb52376447524ae22
 
 COCOAPODS: 1.6.1

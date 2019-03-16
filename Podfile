@@ -6,4 +6,7 @@ target 'SoC' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'HandyJSON'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
 end

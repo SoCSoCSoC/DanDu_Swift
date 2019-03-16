@@ -28,7 +28,7 @@ class UserTopView: UIView {
     lazy var settingBtn : UIButton = {
         let btn = UIButton(type: UIButton.ButtonType.custom)
         btn.setImage(UIImage(named: "Settings_25x25_"), for: UIControl.State.normal)
-        btn.addTarget(self, action: #selector(search), for: UIControl.Event.touchUpInside)
+        btn.addTarget(self, action: #selector(setting), for: UIControl.Event.touchUpInside)
         return btn
     }()
     
@@ -37,6 +37,8 @@ class UserTopView: UIView {
         super.init(frame: frame)
         addSubview(closeBtn)
         addSubview(settingBtn)
+        closeBtn.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
+        settingBtn.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -60,13 +62,22 @@ class UserTopView: UIView {
         }
     }
     
+    func tansScale(big: Bool) {
+        UIView.animate(withDuration: 0.5) {
+            let scale : CGFloat = big ? 1.0 : 0.00001
+            self.closeBtn.transform = CGAffineTransform(scaleX: scale, y: scale)
+            self.settingBtn.transform = CGAffineTransform(scaleX: scale, y: scale)
+        }
+    }
+    
     @objc func close() {
         if delegate != nil {
+            tansScale(big: false)
             delegate?.closeBtnClicked()
         }
     }
     
-    @objc func search() {
+    @objc func setting() {
         if delegate != nil {
             delegate?.settingBtnClicked()
         }

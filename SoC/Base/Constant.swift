@@ -11,6 +11,7 @@ import UIKit
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
 let kStatusHeight = UIApplication.shared.statusBarFrame.size.height
+let kFont = "PMingLiU"
 
 class Constant: NSObject {
 

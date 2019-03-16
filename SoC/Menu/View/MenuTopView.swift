@@ -64,7 +64,7 @@ class MenuTopView: UIView {
     
     func tansScale(big: Bool) {
         UIView.animate(withDuration: 0.5) {
-            let scale : CGFloat = big ? 1.0 : 0.0
+            let scale : CGFloat = big ? 1.0 : 0.00001
             self.closeBtn.transform = CGAffineTransform(scaleX: scale, y: scale)
             self.searchBtn.transform = CGAffineTransform(scaleX: scale, y: scale)
         }
@@ -72,6 +72,7 @@ class MenuTopView: UIView {
     
     @objc func close() {
         if delegate != nil {
+            tansScale(big: false)
             delegate?.closeBtnClicked()
         }
     }

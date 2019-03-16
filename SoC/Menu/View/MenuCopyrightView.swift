@@ -41,7 +41,7 @@ class MenuCopyrightView: UIView {
     
     func tansScale(big: Bool) {
         UIView.animate(withDuration: 0.5) {
-            let scale : CGFloat = big ? 1.0 : 0.0
+            let scale : CGFloat = big ? 1.0 : 0.00001
             self.copyrightLab.transform = CGAffineTransform(scaleX: scale, y: scale)
         }
     }

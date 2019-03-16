@@ -14,7 +14,7 @@ enum AnimationType {
     case dismiss
 }
 
-enum AnimationDirection {
+enum ModalViewControllerDirection {
     case left
     case right
 }
@@ -23,7 +23,7 @@ class FadeAnimator: NSObject , UIViewControllerAnimatedTransitioning {
     
     let duration = 0.5
     var animationType: AnimationType?
-    var direction : AnimationDirection?
+    var fromVcDirection : ModalViewControllerDirection?
     
     
     // 指定转场动画持续的时间
@@ -42,7 +42,7 @@ class FadeAnimator: NSObject , UIViewControllerAnimatedTransitioning {
         let transitionTime = transitionDuration(using: transitionContext)
         let aDelay: TimeInterval = 0.2
         
-        if animationType == AnimationType.present {
+        if animationType == .present {
             // first 放下面
             let snap = fromView?.snapshotView(afterScreenUpdates: true)
             transitionContext.containerView.addSubview(snap!)
@@ -51,13 +51,13 @@ class FadeAnimator: NSObject , UIViewControllerAnimatedTransitioning {
             let snap2 = toView?.snapshotView(afterScreenUpdates: true)
             transitionContext.containerView.addSubview(snap2!)
             
-            snap2?.transform = CGAffineTransform(translationX: direction == .left ? -(UIScreen.main.bounds.size.width) :  (UIScreen.main.bounds.size.width), y: 0)
+            snap2?.transform = CGAffineTransform(translationX: fromVcDirection == .left ? -(UIScreen.main.bounds.size.width) :  (UIScreen.main.bounds.size.width), y: 0)
             
             UIView.animate(withDuration: transitionTime, delay: aDelay, options: UIView.AnimationOptions.curveEaseIn, animations: {
                 snap2?.transform = CGAffineTransform.identity
             }) { (finish) in
                 // 删掉截图
-//                snap?.removeFromSuperview()
+                snap?.removeFromSuperview()
                 snap2?.removeFromSuperview()
                 
                 // 添加视图
@@ -76,9 +76,9 @@ class FadeAnimator: NSObject , UIViewControllerAnimatedTransitioning {
             // first 放上面
             let snap2 = fromView?.snapshotView(afterScreenUpdates: true)
             transitionContext.containerView.addSubview(snap2!)
-            
+            weak var weakSelf = self
             UIView.animate(withDuration: transitionTime, delay: aDelay, options: UIView.AnimationOptions.curveEaseIn, animations: {
-                snap2?.transform = CGAffineTransform(translationX: self.direction == .left ? -(UIScreen.main.bounds.size.width) :  (UIScreen.main.bounds.size.width), y: 0);
+                snap2?.transform = CGAffineTransform(translationX: weakSelf?.fromVcDirection == .left ? -(UIScreen.main.bounds.size.width) :  (UIScreen.main.bounds.size.width), y: 0);
             }) { (finish) in
                 // 删掉截图
                 snap?.removeFromSuperview()
@@ -92,5 +92,19 @@ class FadeAnimator: NSObject , UIViewControllerAnimatedTransitioning {
                 transitionContext.completeTransition(!aDidCom)
             }
         }
+    }
+}
+
+extension FadeAnimator : UIViewControllerTransitioningDelegate {
+    // 提供弹出时的动画
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        animationType = .present
+        return self
+    }
+    
+    // 提供消失时的动画
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        animationType = .dismiss
+        return self
     }
 }

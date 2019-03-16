@@ -1,0 +1,24 @@
+{
+	"status": "ok",
+	"datas": [{
+		"name": "\u9ec4\u91d1\u65f6\u4ee3",
+		"color": "255 236 0"
+	}, {
+		"name": "\u5355\u8bfb",
+		"color": "255 236 0"
+	}, {
+		"name": "\u521b\u9020\u529b",
+		"color": "255 236 0"
+	}, {
+		"name": "\u907f\u96be\u6240",
+		"color": "255 236 0"
+	}, {
+		"name": "\u65b0\u95fb",
+		"color": "255 236 0"
+	}, {
+		"name": "\u8bb0\u8005",
+		"color": "255 236 0"
+	}],
+	"msg": "",
+	"code": 0
+}

@@ -17,10 +17,19 @@ class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
-        view.alpha = 0.9
+        view.backgroundColor = UIColor(white: 0.0, alpha: 0.9)
         view.addSubview(topView)
         topView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        topView.tansScale(big: true)
     }
     
     @objc func back() {

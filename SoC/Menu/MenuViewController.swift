@@ -66,6 +66,8 @@ class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+        
         logoImgView.snp.makeConstraints { (make) in
             make.top.equalTo(topView.snp.bottom).offset(10)
             make.left.equalTo(view)
@@ -110,25 +112,16 @@ class MenuViewController: UIViewController {
             let tmpBtn : UIButton = btn as! UIButton
             UIView.animate(withDuration: 0.2, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
                 tmpBtn.transform = CGAffineTransform(translationX: CGFloat(80*i), y: 0.0)
-            }) { (finished) in
-            }
+            }) { (_) in}
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        topView.tansScale(big: false)
-        copyrightView.tansScale(big: false)
-//        for btn in tagViews {
-//            let i = tagViews.index(of: btn)+1
-//            let tmpBtn : UIButton = btn as! UIButton
-//            UIView.animate(withDuration: 0.2, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
-//                tmpBtn.transform = CGAffineTransform(translationX: CGFloat(-80*(self.tagViews.count-i)), y: 0.0)
-//            }) { (finished) in
-//            }
-//        }
+        navigationController?.isNavigationBarHidden = false
+        
     }
-    let array : [String] = ["首    页","声    音","文    字","影    像","谈    论","单向历"]
+    let array : [String] = ["首    页", "声    音", "文    字", "影    像", "谈    论", "单向历"]
     func addMenu() {
         for i in 0 ..< 6 {
             let btn = UIButton(type: UIButton.ButtonType.custom)
@@ -137,11 +130,68 @@ class MenuViewController: UIViewController {
             btn.setTitleColor(.white, for: UIControl.State.normal)
             btn.setTitle(array[i], for: UIControl.State.normal)
             btn.titleLabel?.font = UIFont(name: "PMingLiU", size: 30.0)
+            btn.addTarget(self, action: #selector(menuClicked(sender:)), for: UIControl.Event.touchUpInside)
             tagViews.add(btn)
             view.addSubview(btn)
         }
     }
     
+    @objc func menuClicked(sender : UIButton) {
+        switch sender.tag - 181515 {
+        case 0:
+            closeBtnClicked()
+        case 1:
+            soundBtnClicked()
+        case 2:
+            wordBtnClicked()
+        case 3:
+            filmBtnClicked()
+        case 4:
+            talkBtnClicked()
+        default:
+            calendarBtnClicked()
+        }
+    }
+    deinit {
+        print("=======")
+    }
+}
+
+extension MenuViewController : MenuTopViewDelegate {
+    func closeBtnClicked() {
+        weak var weakSelf = self;
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
+            for btn in weakSelf?.tagViews ?? NSMutableArray() {
+                let i = (weakSelf?.tagViews.index(of: btn))!+1
+                let tmpBtn : UIButton = btn as! UIButton
+                tmpBtn.transform = CGAffineTransform(translationX: CGFloat(-80*((weakSelf?.tagViews.count)!-i)), y: 0.0)
+                weakSelf?.copyrightView.tansScale(big: false)
+                weakSelf?.dismiss(animated: true, completion: nil)
+            }
+        }) { (_) in}
+    }
+    
+    func searchBtnClicked() {
+        navigationController?.pushViewController(SearchViewController(), animated: true)
+    }
+    func soundBtnClicked() {
+        navigationController?.pushViewController(ListViewController(), animated: true)
+    }
+    func wordBtnClicked() {
+        navigationController?.pushViewController(WordViewController(), animated: true)
+    }
+    func filmBtnClicked() {
+        navigationController?.pushViewController(ListViewController(), animated: true)
+    }
+    func talkBtnClicked() {
+        navigationController?.pushViewController(TalkViewController(), animated: true)
+    }
+    func calendarBtnClicked() {
+        navigationController?.pushViewController(CalendarViewController(), animated: true)
+    }
+}
+
+extension MenuViewController {
     /// 状态栏样式
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -156,16 +206,4 @@ class MenuViewController: UIViewController {
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .slide
     }
-}
-
-extension MenuViewController : MenuTopViewDelegate {
-    func closeBtnClicked() {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func searchBtnClicked() {
-        
-    }
-    
-    
 }

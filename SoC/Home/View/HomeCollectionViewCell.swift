@@ -196,19 +196,19 @@ class HomeCollectionViewCell: UICollectionViewCell {
     func setData(data : HomeModel) {
         let headerImg : URL = URL(string: data.thumbnail as String)!
         headerImageView.af_setImage(withURL: headerImg)
-        tagLab.text = data.category! as String
-        titleLab.attributedText = TextUtils.setLineSpace(space: 10.0, title: data.title! as String)
+        tagLab.text = data.category as String
+        titleLab.attributedText = TextUtils.setLineSpace(space: 10.0, title: data.title as String)
         titleLab.textAlignment = .center
         var desc = ""
-        if data.lead!.length > 0 {
-            desc = data.lead! as String
+        if data.lead.length > 0 {
+            desc = data.lead as String
         }else {
-            desc = data.excerpt! as String
+            desc = data.excerpt as String
         }
         descLab.attributedText = TextUtils.setLineSpace(space: 8.0, title: desc)
         descLab.textAlignment = .center
-        authorLab.text = data.author! as String
-        readCountLab.text = "阅读数 \(data.view! as String)"
+        authorLab.text = data.author as String
+        readCountLab.text = "阅读数 \(data.view as String)"
     }
     
 }
