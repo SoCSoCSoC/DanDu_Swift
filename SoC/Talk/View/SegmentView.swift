@@ -52,8 +52,10 @@ class SegmentView: UIView {
         return lineView
     }()
 
-    override init(frame: CGRect) {
+    init(frame: CGRect, leftTag: String, rightTag: String) {
         super.init(frame: frame)
+        questionTabBtn.setTitle(leftTag, for: .normal)
+        readerTabBtn.setTitle(rightTag, for: .normal)
         addSubview(questionTabBtn)
         addSubview(readerTabBtn)
         addSubview(lineView)

@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
         webViwe.uiDelegate = self
         webViwe.navigationDelegate = self
         webViwe.scrollView.delegate = self
-        let url : URL = URL(string: "\(contentUrl! as String)?client=iOS")!
+        let url : URL = URL(string: "\(contentUrl! as String)?client=iOS&changeSize=1")!
         let request : URLRequest = URLRequest(url: url)
         webViwe.load(request)
         return webViwe
@@ -42,7 +42,7 @@ class DetailViewController: UIViewController {
         view.addSubview(topInteractiveView)
         topInteractiveView.delegate = self
         test()
-        
+//        mainWebView.evaluateJavaScript("changeSize(4)", completionHandler: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

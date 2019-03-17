@@ -1,24 +1,23 @@
 //
-//  TalkViewController.swift
+//  CollectionViewController.swift
 //  SoC
 //
-//  Created by SoC on 2019/3/13.
+//  Created by SoC on 2019/3/17.
 //  Copyright © 2019 SoC. All rights reserved.
 //
 
 import UIKit
 
-class TalkViewController: UIViewController {
-
+class CollectionViewController: UIViewController {
     var topNavView : TopNavView?
     var segmentView : SegmentView?
     
     lazy var scrollView : UIScrollView = {
-       let scrollView = UIScrollView(frame: CGRect(x: 0, y: (segmentView?.frame.origin.y ?? 0.0)+30, width: kScreenWidth, height: kScreenHeight-30-kStatusHeight-44))
+        let scrollView = UIScrollView(frame: CGRect(x: 0, y: (segmentView?.frame.origin.y ?? 0.0)+30, width: kScreenWidth, height: kScreenHeight-30-kStatusHeight-44))
         scrollView.contentSize = CGSize(width: kScreenWidth * 2, height: kScreenHeight-30-(topNavView?.frame.size.height ?? 0.0))
         scrollView.isScrollEnabled = false
-        let qVc = TalkQuestionViewController()
-        let rVc = TalkReaderViewController()
+        let qVc = MyCollectionViewController()
+        let rVc = MyCommentViewController()
         addChild(qVc)
         addChild(rVc)
         qVc.view.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: scrollView.frame.size.height)
@@ -31,13 +30,13 @@ class TalkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        topNavView = TopNavView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kStatusHeight+44), title: "谈 论", back: {[weak self] in
+        topNavView = TopNavView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kStatusHeight+44), title: "收  藏", back: {[weak self] in
             self?.navigationController?.popViewController(animated: true)
         })
         if let topNav = topNavView {
             view.addSubview(topNav)
         }
-        segmentView = SegmentView(frame: CGRect(x: 0, y: (topNavView?.frame.size.height) ?? 0.0, width: kScreenWidth, height: 30), leftTag: "单读问", rightTag: "读者论")
+        segmentView = SegmentView(frame: CGRect(x: 0, y: (topNavView?.frame.size.height) ?? 0.0, width: kScreenWidth, height: 30), leftTag: "我的收藏", rightTag: "我的评论")
         segmentView?.delegate = self
         view.addSubview(segmentView!)
         view.addSubview(scrollView)
@@ -48,18 +47,17 @@ class TalkViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
-
-
-extension TalkViewController : SegmentActionEventDelegate {
-    func clickedQuestionTab() {
-        UIView.animate(withDuration: 0.2) {
-            self.scrollView.contentOffset = CGPoint(x: 0, y: 0)
-        }
-    }
     
-    func clickedReaderTab() {
-        UIView.animate(withDuration: 0.2) {
-            self.scrollView.contentOffset = CGPoint(x: kScreenWidth, y: 0)
+extension CollectionViewController : SegmentActionEventDelegate {
+        func clickedQuestionTab() {
+            UIView.animate(withDuration: 0.2) {
+                self.scrollView.contentOffset = CGPoint(x: 0, y: 0)
+            }
         }
-    }
+        
+        func clickedReaderTab() {
+            UIView.animate(withDuration: 0.2) {
+                self.scrollView.contentOffset = CGPoint(x: kScreenWidth, y: 0)
+            }
+        }
 }

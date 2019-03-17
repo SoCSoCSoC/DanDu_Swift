@@ -123,7 +123,7 @@ class MenuViewController: UIViewController {
     }
     let array : [String] = ["首    页", "声    音", "文    字", "影    像", "谈    论", "单向历"]
     func addMenu() {
-        for i in 0 ..< 6 {
+        for i in 0 ..< array.count {
             let btn = UIButton(type: UIButton.ButtonType.custom)
             btn.frame = CGRect(x: CGFloat(i*(-80)), y: CGFloat((190.0)+CGFloat(i*60)), width: kScreenWidth, height: 60)
             btn.tag = 181515+i

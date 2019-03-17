@@ -46,6 +46,30 @@
 		D8C93765223D6AA900DE958A /* TalkReaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C93763223D6AA900DE958A /* TalkReaderTableViewCell.xib */; };
 		D8C93767223D6D7700DE958A /* TalkReaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93766223D6D7700DE958A /* TalkReaderModel.swift */; };
 		D8C93769223D6E2200DE958A /* TalkReaderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93768223D6E2200DE958A /* TalkReaderDataManager.swift */; };
+		D8C9376B223D7D8D00DE958A /* UserLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9376A223D7D8D00DE958A /* UserLogoView.swift */; };
+		D8C9376D223D809F00DE958A /* UserCopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9376C223D809F00DE958A /* UserCopyrightView.swift */; };
+		D8C93770223DE88800DE958A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9376F223DE88800DE958A /* InfoViewController.swift */; };
+		D8C93773223DE8E200DE958A /* SystemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93772223DE8E200DE958A /* SystemInfoViewController.swift */; };
+		D8C93775223DE8EE00DE958A /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93774223DE8EE00DE958A /* ReplyViewController.swift */; };
+		D8C93778223DEAE700DE958A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93777223DEAE700DE958A /* CollectionViewController.swift */; };
+		D8C9377B223DEB6A00DE958A /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9377A223DEB6A00DE958A /* MyCollectionViewController.swift */; };
+		D8C9377D223DEB7300DE958A /* MyCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9377C223DEB7300DE958A /* MyCommentViewController.swift */; };
+		D8C93780223DEC6400DE958A /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9377F223DEC6400DE958A /* DownloadViewController.swift */; };
+		D8C93783223DECF000DE958A /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93782223DECF000DE958A /* NoteViewController.swift */; };
+		D8C93786223DED8400DE958A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93785223DED8400DE958A /* SettingViewController.swift */; };
+		D8C9378C223DF01000DE958A /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9378A223DF01000DE958A /* SwitchTableViewCell.swift */; };
+		D8C9378D223DF01000DE958A /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C9378B223DF01000DE958A /* SwitchTableViewCell.xib */; };
+		D8C93790223DF01A00DE958A /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9378E223DF01A00DE958A /* WordTableViewCell.swift */; };
+		D8C93791223DF01A00DE958A /* WordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C9378F223DF01A00DE958A /* WordTableViewCell.xib */; };
+		D8C93796223DF04300DE958A /* ArrowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93794223DF04300DE958A /* ArrowTableViewCell.swift */; };
+		D8C93797223DF04300DE958A /* ArrowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C93795223DF04300DE958A /* ArrowTableViewCell.xib */; };
+		D8C93799223DF8A200DE958A /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C93798223DF8A200DE958A /* CacheManager.swift */; };
+		D8C9379C223DFAC600DE958A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9379B223DFAC600DE958A /* AboutViewController.swift */; };
+		D8C9379F223DFAFA00DE958A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9379E223DFAFA00DE958A /* FeedbackViewController.swift */; };
+		D8C937A2223DFB0D00DE958A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C937A1223DFB0D00DE958A /* ShareViewController.swift */; };
+		D8C937A5223DFB3700DE958A /* WordSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C937A4223DFB3700DE958A /* WordSizeViewController.swift */; };
+		D8C937AB223DFEC600DE958A /* WordSizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C937A9223DFEC600DE958A /* WordSizeTableViewCell.swift */; };
+		D8C937AC223DFEC600DE958A /* WordSizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C937AA223DFEC600DE958A /* WordSizeTableViewCell.xib */; };
 		D8CFD790223CD47A0074A0A5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFD78F223CD47A0074A0A5 /* HomeViewModel.swift */; };
 		D8CFD7A3223CF1E40074A0A5 /* calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD791223CF1E20074A0A5 /* calendar.json */; };
 		D8CFD7A4223CF1E40074A0A5 /* 经典重现.json in Resources */ = {isa = PBXBuildFile; fileRef = D8CFD792223CF1E20074A0A5 /* 经典重现.json */; };
@@ -133,6 +157,30 @@
 		D8C93763223D6AA900DE958A /* TalkReaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkReaderTableViewCell.xib; sourceTree = "<group>"; };
 		D8C93766223D6D7700DE958A /* TalkReaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkReaderModel.swift; sourceTree = "<group>"; };
 		D8C93768223D6E2200DE958A /* TalkReaderDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkReaderDataManager.swift; sourceTree = "<group>"; };
+		D8C9376A223D7D8D00DE958A /* UserLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogoView.swift; sourceTree = "<group>"; };
+		D8C9376C223D809F00DE958A /* UserCopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCopyrightView.swift; sourceTree = "<group>"; };
+		D8C9376F223DE88800DE958A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D8C93772223DE8E200DE958A /* SystemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfoViewController.swift; sourceTree = "<group>"; };
+		D8C93774223DE8EE00DE958A /* ReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
+		D8C93777223DEAE700DE958A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D8C9377A223DEB6A00DE958A /* MyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
+		D8C9377C223DEB7300DE958A /* MyCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommentViewController.swift; sourceTree = "<group>"; };
+		D8C9377F223DEC6400DE958A /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		D8C93782223DECF000DE958A /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		D8C93785223DED8400DE958A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D8C9378A223DF01000DE958A /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		D8C9378B223DF01000DE958A /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchTableViewCell.xib; sourceTree = "<group>"; };
+		D8C9378E223DF01A00DE958A /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		D8C9378F223DF01A00DE958A /* WordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTableViewCell.xib; sourceTree = "<group>"; };
+		D8C93794223DF04300DE958A /* ArrowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowTableViewCell.swift; sourceTree = "<group>"; };
+		D8C93795223DF04300DE958A /* ArrowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrowTableViewCell.xib; sourceTree = "<group>"; };
+		D8C93798223DF8A200DE958A /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		D8C9379B223DFAC600DE958A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D8C9379E223DFAFA00DE958A /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		D8C937A1223DFB0D00DE958A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		D8C937A4223DFB3700DE958A /* WordSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSizeViewController.swift; sourceTree = "<group>"; };
+		D8C937A9223DFEC600DE958A /* WordSizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSizeTableViewCell.swift; sourceTree = "<group>"; };
+		D8C937AA223DFEC600DE958A /* WordSizeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordSizeTableViewCell.xib; sourceTree = "<group>"; };
 		D8CFD78F223CD47A0074A0A5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D8CFD791223CF1E20074A0A5 /* calendar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = calendar.json; sourceTree = "<group>"; };
 		D8CFD792223CF1E20074A0A5 /* 经典重现.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "经典重现.json"; sourceTree = "<group>"; };
@@ -225,6 +273,15 @@
 			isa = PBXGroup;
 			children = (
 				D86A95EB22363ADC007829E7 /* AppDelegate.swift */,
+				D8C937A3223DFB2900DE958A /* WordSize */,
+				D8C937A0223DFB0000DE958A /* Share */,
+				D8C9379D223DFAD800DE958A /* Feedback */,
+				D8C9379A223DFAB000DE958A /* About */,
+				D8C93784223DED6C00DE958A /* Setting */,
+				D8C93781223DECE700DE958A /* Note */,
+				D8C9377E223DEC4400DE958A /* DownLoad */,
+				D8C93776223DEACE00DE958A /* Collection */,
+				D8C9376E223DE87000DE958A /* Info */,
 				D8CFD7F8223D4E810074A0A5 /* AuthorDetail */,
 				D8CFD7EA223D45B90074A0A5 /* AuthorList */,
 				D8CFD7D3223D1E640074A0A5 /* Common */,
@@ -256,7 +313,6 @@
 			children = (
 				D8CFD78E223CD4510074A0A5 /* ViewModel */,
 				D899B632223B35FB00D3D89A /* ModalAnimation */,
-				D8735D1B2237E329000A6493 /* Data */,
 				D8735D1A2237E324000A6493 /* Model */,
 				D86A960722364845007829E7 /* View */,
 				D86A95FE223640AF007829E7 /* Controller */,
@@ -288,6 +344,7 @@
 				D84B1DA72236A66100B8E166 /* TextUtils.swift */,
 				D8735D222237F5F3000A6493 /* UIColor+HexadecimalColor.swift */,
 				D8C9374F223D56E600DE958A /* TimeUtils.swift */,
+				D8C93798223DF8A200DE958A /* CacheManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -303,6 +360,7 @@
 		D86A962C2236909D007829E7 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				D8735D1C2237E3C2000A6493 /* Home.json */,
 				D8CFD791223CF1E20074A0A5 /* calendar.json */,
 				D8CFD79B223CF1E30074A0A5 /* 更多评论.json */,
 				D8CFD792223CF1E20074A0A5 /* 经典重现.json */,
@@ -351,14 +409,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D8735D1B2237E329000A6493 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				D8735D1C2237E3C2000A6493 /* Home.json */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		D8735D24223800E9000A6493 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +448,8 @@
 			isa = PBXGroup;
 			children = (
 				D8735D372238D79D000A6493 /* UserTopView.swift */,
+				D8C9376A223D7D8D00DE958A /* UserLogoView.swift */,
+				D8C9376C223D809F00DE958A /* UserCopyrightView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +555,122 @@
 				D8C93766223D6D7700DE958A /* TalkReaderModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D8C9376E223DE87000DE958A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D8C93771223DE8CE00DE958A /* Controller */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		D8C93771223DE8CE00DE958A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9376F223DE88800DE958A /* InfoViewController.swift */,
+				D8C93772223DE8E200DE958A /* SystemInfoViewController.swift */,
+				D8C93774223DE8EE00DE958A /* ReplyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8C93776223DEACE00DE958A /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				D8C93779223DEB5A00DE958A /* Controller */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		D8C93779223DEB5A00DE958A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8C93777223DEAE700DE958A /* CollectionViewController.swift */,
+				D8C9377A223DEB6A00DE958A /* MyCollectionViewController.swift */,
+				D8C9377C223DEB7300DE958A /* MyCommentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8C9377E223DEC4400DE958A /* DownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9377F223DEC6400DE958A /* DownloadViewController.swift */,
+			);
+			path = DownLoad;
+			sourceTree = "<group>";
+		};
+		D8C93781223DECE700DE958A /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				D8C93782223DECF000DE958A /* NoteViewController.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		D8C93784223DED6C00DE958A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D8C93785223DED8400DE958A /* SettingViewController.swift */,
+				D8C93787223DEF9B00DE958A /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		D8C93787223DEF9B00DE958A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9378A223DF01000DE958A /* SwitchTableViewCell.swift */,
+				D8C9378B223DF01000DE958A /* SwitchTableViewCell.xib */,
+				D8C9378E223DF01A00DE958A /* WordTableViewCell.swift */,
+				D8C9378F223DF01A00DE958A /* WordTableViewCell.xib */,
+				D8C93794223DF04300DE958A /* ArrowTableViewCell.swift */,
+				D8C93795223DF04300DE958A /* ArrowTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8C9379A223DFAB000DE958A /* About */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9379B223DFAC600DE958A /* AboutViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		D8C9379D223DFAD800DE958A /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9379E223DFAFA00DE958A /* FeedbackViewController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		D8C937A0223DFB0000DE958A /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				D8C937A1223DFB0D00DE958A /* ShareViewController.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		D8C937A3223DFB2900DE958A /* WordSize */ = {
+			isa = PBXGroup;
+			children = (
+				D8C937A8223DFE2800DE958A /* View */,
+				D8C937A4223DFB3700DE958A /* WordSizeViewController.swift */,
+			);
+			path = WordSize;
+			sourceTree = "<group>";
+		};
+		D8C937A8223DFE2800DE958A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8C937A9223DFEC600DE958A /* WordSizeTableViewCell.swift */,
+				D8C937AA223DFEC600DE958A /* WordSizeTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D8CFD78E223CD4510074A0A5 /* ViewModel */ = {
@@ -713,9 +881,13 @@
 				D8CFD7B3223CF1E40074A0A5 /* search.json in Resources */,
 				D8CFD7A6223CF1E40074A0A5 /* question.json in Resources */,
 				D8CFD7A5223CF1E40074A0A5 /* reader.json in Resources */,
+				D8C93791223DF01A00DE958A /* WordTableViewCell.xib in Resources */,
 				D8CFD7AC223CF1E40074A0A5 /* 新书首发.json in Resources */,
 				D8CFD7F3223D49140074A0A5 /* AuthorListCollectionViewCell.xib in Resources */,
+				D8C93797223DF04300DE958A /* ArrowTableViewCell.xib in Resources */,
 				D8CFD7B2223CF1E40074A0A5 /* artcle.json in Resources */,
+				D8C937AC223DFEC600DE958A /* WordSizeTableViewCell.xib in Resources */,
+				D8C9378D223DF01000DE958A /* SwitchTableViewCell.xib in Resources */,
 				D8CFD7AD223CF1E40074A0A5 /* 更多评论.json in Resources */,
 				D8CFD805223D51DB0074A0A5 /* CalendarCollectionViewCell.xib in Resources */,
 				D8CFD7B4223CF1E40074A0A5 /* author_dandu.json in Resources */,
@@ -791,24 +963,34 @@
 			files = (
 				D8C93767223D6D7700DE958A /* TalkReaderModel.swift in Sources */,
 				D8CFD7D1223D1E3B0074A0A5 /* ListViewController.swift in Sources */,
+				D8C93780223DEC6400DE958A /* DownloadViewController.swift in Sources */,
 				D8735D61223933A6000A6493 /* CalendarViewController.swift in Sources */,
+				D8C9376D223D809F00DE958A /* UserCopyrightView.swift in Sources */,
 				D8735D2622380100000A6493 /* DetailTopInteractiveView.swift in Sources */,
 				D8CFD7BE223CFA6A0074A0A5 /* WordViewController.swift in Sources */,
 				D8C93753223D5BC600DE958A /* SegmentView.swift in Sources */,
+				D8C93783223DECF000DE958A /* NoteViewController.swift in Sources */,
 				D8735D352238D423000A6493 /* Constant.swift in Sources */,
 				D8735D302238CF0F000A6493 /* UserViewController.swift in Sources */,
 				D8735D192237ABFE000A6493 /* CommentViewController.swift in Sources */,
+				D8C937AB223DFEC600DE958A /* WordSizeTableViewCell.swift in Sources */,
 				D8CFD7C9223D17EF0074A0A5 /* WordDataManager.swift in Sources */,
+				D8C937A5223DFB3700DE958A /* WordSizeViewController.swift in Sources */,
+				D8C9379F223DFAFA00DE958A /* FeedbackViewController.swift in Sources */,
 				D8CFD7F2223D49140074A0A5 /* AuthorListCollectionViewCell.swift in Sources */,
 				D86A960922364861007829E7 /* HomeCollectionViewCell.swift in Sources */,
+				D8C9376B223D7D8D00DE958A /* UserLogoView.swift in Sources */,
+				D8C93796223DF04300DE958A /* ArrowTableViewCell.swift in Sources */,
 				D8C93756223D61E600DE958A /* TalkQuestionViewController.swift in Sources */,
 				D8CFD790223CD47A0074A0A5 /* HomeViewModel.swift in Sources */,
+				D8C9377B223DEB6A00DE958A /* MyCollectionViewController.swift in Sources */,
 				D86A95EC22363ADC007829E7 /* AppDelegate.swift in Sources */,
 				D8CFD7E8223D40800074A0A5 /* ListTableViewCell.swift in Sources */,
 				D8735D232237F5F3000A6493 /* UIColor+HexadecimalColor.swift in Sources */,
 				D8CFD7C2223CFF470074A0A5 /* WordCollectionViewCell.swift in Sources */,
 				D8C93764223D6AA900DE958A /* TalkReaderTableViewCell.swift in Sources */,
 				D84B1DA82236A66100B8E166 /* TextUtils.swift in Sources */,
+				D8C93770223DE88800DE958A /* InfoViewController.swift in Sources */,
 				D8CFD7FA223D4E9A0074A0A5 /* AuthorDetailViewController.swift in Sources */,
 				D8C93750223D56E600DE958A /* TimeUtils.swift in Sources */,
 				D86A9600223640D6007829E7 /* HomeViewController.swift in Sources */,
@@ -818,11 +1000,15 @@
 				D8735D65223933B8000A6493 /* FilmViewController.swift in Sources */,
 				D8735D212237E5DB000A6493 /* HomeModel.swift in Sources */,
 				D8735D6B223933D8000A6493 /* SearchViewController.swift in Sources */,
+				D8C93786223DED8400DE958A /* SettingViewController.swift in Sources */,
 				D8735D2D2238C98F000A6493 /* FadeAnimation.swift in Sources */,
 				D8CFD804223D51DB0074A0A5 /* CalendarCollectionViewCell.swift in Sources */,
 				D8CFD7C7223D17660074A0A5 /* WordModel.swift in Sources */,
 				D86A96032236414F007829E7 /* RootNavigationController.swift in Sources */,
+				D8C9378C223DF01000DE958A /* SwitchTableViewCell.swift in Sources */,
 				D8CFD7E2223D3EC20074A0A5 /* ListDataManager.swift in Sources */,
+				D8C9377D223DEB7300DE958A /* MyCommentViewController.swift in Sources */,
+				D8C93775223DE8EE00DE958A /* ReplyViewController.swift in Sources */,
 				D8CFD801223D50B60074A0A5 /* CalendarDataManager.swift in Sources */,
 				D8735D3A2238E6E8000A6493 /* MenuCopyrightView.swift in Sources */,
 				D8735D292238BFEC000A6493 /* MenuViewController.swift in Sources */,
@@ -835,9 +1021,15 @@
 				D8C93760223D672500DE958A /* TalkQuestionTableViewCell.swift in Sources */,
 				D8735D0A2237824A000A6493 /* DetailViewController.swift in Sources */,
 				D8735D332238D3DA000A6493 /* MenuTopView.swift in Sources */,
+				D8C937A2223DFB0D00DE958A /* ShareViewController.swift in Sources */,
 				D8C93769223D6E2200DE958A /* TalkReaderDataManager.swift in Sources */,
+				D8C93790223DF01A00DE958A /* WordTableViewCell.swift in Sources */,
+				D8C93773223DE8E200DE958A /* SystemInfoViewController.swift in Sources */,
+				D8C93799223DF8A200DE958A /* CacheManager.swift in Sources */,
 				D8735D67223933C0000A6493 /* SoundViewController.swift in Sources */,
 				D8C9375D223D66C000DE958A /* TalkQuestionDataManager.swift in Sources */,
+				D8C9379C223DFAC600DE958A /* AboutViewController.swift in Sources */,
+				D8C93778223DEAE700DE958A /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
